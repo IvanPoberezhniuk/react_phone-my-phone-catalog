@@ -1,0 +1,68 @@
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: calc((225px + 1em) * 4);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: calc(225px + 1em);
+  padding: 0.5em;
+  transition-duration: 0.2s;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(228, 228, 228, 0.8);
+
+  &:hover {
+    box-shadow: 0 10px 13px -7px #000, 5px 5px 15px 5px rgba(138, 134, 134, 0);
+    transform: translateY(-10px);
+  }
+
+  &__img {
+    height: 225px;
+  }
+
+  &__title {
+    color: $base-text-color;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    color: black;
+    font-size: 14px;
+  }
+}
+
+.button-buy {
+  font-size: 1.3em;
+  padding: 0.35em 1em;
+  margin-top: 1em;
+  width: 100%;
+  color: white;
+  background-color: $base-text-color;
+  border: none;
+  transition-duration: 0.2s;
+  grid-row-end: [last-line];
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(159, 233, 159);
+  }
+}
