@@ -1,0 +1,28 @@
+.filter {
+  box-shadow: 0 0 0 1px rgba(228, 228, 228, 0.8);
+  width: 100%;
+  display: flex;
+
+  &__search-field {
+    height: 44px;
+    padding: 0.3em;
+    font-size: 1.3em;
+    width: 90%;
+    border: none;
+
+    &::before {
+      content: "";
+      height: 44px;
+      width: 44px;
+      background: url("/img/search-icon.svg") left center no-repeat;
+    }
+  }
+
+  &__direction {
+    font-size: 1.3em;
+    text-align: center;
+    width: 10%;
+
+    border: none;
+  }
+}

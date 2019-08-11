@@ -1,0 +1,24 @@
+.myFancyButton {
+  width: 25px;
+  height: 25px;
+  color: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  background-color: white;
+  transition-duration: 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+    background-color: lightblue;
+  }
+  &--warning {
+    border-color: deeppink;
+    color: deeppink;
+
+    &:hover {
+      color: white;
+      background-color: deeppink;
+    }
+  }
+}
